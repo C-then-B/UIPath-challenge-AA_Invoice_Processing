@@ -1,0 +1,345 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="savedBrowserInstance" Type="InArgument(ui:UiElement)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>909,4125</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ProcessBrowser" sap:VirtualizedContainerService.HintSize="680,4060" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Invoice Entry" sap:VirtualizedContainerService.HintSize="638,3968" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="604,3832" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dtProducts" />
+              <Variable x:TypeArguments="x:Int32" Name="productCounter" />
+              <Variable x:TypeArguments="x:String" Name="filePath">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:String">C:\Users\M\Desktop\AA_Invoice Processing\Invoice8.tiff</Literal>
+                </Variable.Default>
+              </Variable>
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DisplayName="Type Into 'INPUT invoiceNumber'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="562,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Text="10292" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="418, 455, 539, 42" ElementType="InputBox" FriendlyName="'INPUT invoiceNumber'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="9b7d0056-f0c8-402a-958b-ba4e66dac5a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhsAAAAqCAYAAAAanpmcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOBSURBVHhe7dm7bttIGIDRfYxNZEj2bhe4VmoDalwkaQJXQd7/Lbi8jTQ3SrKgMbPAKQ4MaEjOMM3/Sfnr78+bDgCgFbEBADR1jI1Pm033sH3sto9P3e6ffwEA3m3oiKEnhq4oYuNht6veBADwXkNXFLGxffKLBgBwH0NXFLFRuxAA4FZiAwBoSmwAAE2JDQCgKbEBADQlNgCApsQGANCU2AAAmhIbAEBTd4iNfff911v3/WttraWP2Pe5O/x8637/eu32tfWvr/3aj+7wXFm7oy+HH8tnAIA/3P84Nj5CiI3et325LjYA4CKxcVYUG7V3FBsAcFGD2JgG9Nthnwzq3z9fui/RevlLQbjv+fjZ/lt0f7LHoBI5zy/dW3T9ac+F9dqvFYlw1pfpb/68LDbGKDh7TTjz9Dc9R/pZ/F4hNg7j33BNJT4uvN/4nPAulXUAaKFZbAzD7PjZPARDSFS/qY/XhKEcnhFdMw7teJ9s32J9jpUw/LMzHPfI4yARYqMfysX9vRtjo7in+lnlmujZU4hF/z5XvF94TvIOANBYu9jIvjXXBn8cBsmgzoZ49RnZvuPamW/q6b2zyjlS6btMAz46162xEZ+zFjHZufL4mEzPCvdd837Tc/x3DAAfq1ls5N+e02GYB0k6OBeHYmVwT/um95eW1utnzdfzcx7f48bYSPeL32NWi4T8ub1TYF33fkvPAYCWVoqNLCiuGdrFdfG+lYGdmNan/64oXR8bvfEM8z1/WGzk7xWIDQDWtFpsxAP1bIjExsEdPo/3rQ3x2KX1JZXY6I3nHc6xamzEZ7vu/cQGAGtYLzaOw/K1HJTZEA/SZ8T71qPgZGm9MugT5++bfjnIYiOLpOmzO8RGEV/xs657P7EBwBpWjI0wRNOBPZmHZzxgxwCJ98n2LdazIT0P8PhctTOlloZ4b94vOXt+hnnP+8RGetbjryvZPefeT2wAsIZVY+M4jBcG4DRQgzxIlof06Z7s14B8/eLgPRMbxyBKz3UKqEG//7jnHWKjP+s+fnbt7BfeT2wAsIY7xAYAwDKxAQA0JTYAgKbEBgDQlNgAAJoSGwBAU2IDAGhKbAAATYkNAKApsQEANCU2AICmitjYPj1VLwQAeK+hK4rYeNjtqhcDALzX0BVFbHza9MGxfey2j37hAABuM3TE0BNDVxSxAQDQgtgAABradP8BQB3g7JdT/D0AAAAASUVORK5CYII=" InformativeScreenshot="fd09e79ff43347dec7f5d5703ad185b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DisplayName="Type Into 'INPUT invoiceDate'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="562,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Text="22 Aug 2018" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="965, 457, 535, 38" ElementType="InputBox" FriendlyName="'INPUT invoiceDate'" FullSelectorArgument="&lt;webctrl id='invoiceDate' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='invoiceDate' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="85a091b0-9812-4e21-9a65-ebdc89b7acfa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhsAAAAqCAYAAAAanpmcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANMSURBVHhe7dk/U9swGMDhfoy24RJoN445zNxlYQAWjqnX7/8tXDv+E1mSbcIh0sAzPEsUW0qX91fx7fvPVQUAUIrYAACKGmLjx2pVXawvq/XlVbX59RsA4GhNRzQ90XRFEhsXm032IQCAYzVdkcTG+sqNBgDwPpquSGIj90UAgLcSGwBAUWIDAChKbAAARYkNAKAosQEAFCU2AICixAYAUJTYAACKeofY2FaPf16qx9vcWkkfse9NtXt+qf7W+ySe76rr7DNL6nO/+VkAOD9nHBsfoYuNh22ytn1oouO+2kafL9k/JzYA+ELExqzp2JhfmyY2APhqCsRGO4RfdtvxnyCGATs1pPvnbobP2tuDg3HQZCLn5q56Cb6fDPV4fTEUFoLi9r5+z1O1u4k/C/YY1rt3JZ832t8yrIkRAD6RYrHRDM3hs27I9yFxvXuq16M/Qey/Ew/m4DvdED/sE+2brEe3CNEZhj1mB/tCbHTvHJ9hHB/xn1vSm40uNII94mcA4JyVi41oQOcGfxgG+wDp13M3BrXxoB7vu1+bualIh3wtc46xhdh4zRmi3xKfIxte3XvDWx4AOFfFYiMelOMhGw/x8XDND+DaaHCH+y4N56n1/Fnj9dfGRmj/e+u11lRsTL8/Gy4AcIZOFBtRUET/+x/dcoQWYiM39Fvt+mH4j705NrJ/Runf251z9maje//wTERsAPAJnCw2wkE9GyKh/eDuP09jYzoaltanLMTG6DwT331NbIgKAD6x08XGMGjv0xCIBnRv/I5w36WhPbUenz029954Lf+u/ZknYyP379Jo3318HAHA/+eEsdHfYIyHcasb5OHtxj5Awn2ifZP16Iaku0kJz5Uf9KHp2GgjIrx96b4bvq87U3iudM/2d4R7TN7sAMAZOmls9AEwNfDbgd6LgyRzk9C/bxAN7Hh9NjQaffRkZJ/twmFQ7x9HTnCGw9kzz43eCwDn6x1iAwBgmtgAAIoSGwBAUWIDAChKbAAARYkNAKAosQEAFCU2AICixAYAUJTYAACKEhsAQFFJbKyvrrJfBAA4VtMVSWxcbDbZLwMAHKvpiiQ2fqzq4FhfVutLNxwAwNs0HdH0RNMVSWwAAJQgNgCAglbVP97JqGM37ZY6AAAAAElFTkSuQmCC" InformativeScreenshot="d7e4408640f89512c8053bdb2a999a45.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DisplayName="Type Into 'INPUT invoiceTotal'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="562,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Text="1361.58" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="420, 515, 535, 38" ElementType="InputBox" FriendlyName="'INPUT invoiceTotal'" FullSelectorArgument="&lt;webctrl id='invoiceTotal' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='invoiceTotal' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="979690bb-de38-4284-b4ec-f2f9081bc2a5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhsAAAAqCAYAAAAanpmcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM+SURBVHhe7drPTtswAMDhPcZYUf9sN8S5nJG4cAAuiNPE+79FhtMkdWynpQyvIvsOn5DqxHa4+EfKt+8/Fg0AQC1iAwCoaoiNi8WiuVyum+V606x+/gIAOFnoiNAToSuy2LhcrYo3AQCcKnRFFhvLjTcaAMDnCF2RxUbpQgCAjxIbAEBVYgMAqEpsAABViQ0AoCqxAQBUJTYAgKrEBgBQldgAAKr6hNjYNo+/X5rHm9JYTZXXvblvXt/mP+j5trkq3ZvYPjw1d9flsaJ27ftmWxoDgC/mC8fGv3V19/SxAGjDQWwA8P8SG+8kNgDgYyrExnVz9/zSvNxt25/5Vw678deHbXd9et/18Nn2Ibp/tEZQiJzr2+Yluj77miMdz/YwbTI2Dqy5u2c/tn+27ncQjY32IjYAmJFqsREO0OGz7kDuD9viwd1e078B6OeIrmkP4HidZN1svIuV/vBP9jCs8c7/uyjuuVvz4JztNfGbje6aOC7SvYkNAGakXmwkbw1KB38cBu1h3o9nB/TOaI5k3XbswJuK8b2dwj6m5LFRfs5szvRZ2vH02ZK5xAYAM1ItNvZ/7e+MD/v0oN7NcfDNRzA6uON1x/fnpsbLey3J93R4znE45OHU6sKk/RolEBsAzNCZYiM5vJMDefSWI3YkNvZ7SO3Gh0M98Texka95LDa68X799rrSPWIDgHk4W2zEXzccDJHY6BDOY2M6Go6NH3fqm43h8zQ2svgIxAYA83W+2BgO2Pv80C4eyOkc8brJYZ2ZGk/3Pi2PjYk5j/zPRvGtTf91itgAYIbOGBv9Af72+dRf+vGB2x7A8TrJutl4EgjdgR7vq7SnKXlsvOnW3M/Z7TueM4mNfJ/9s0b3tdeIDQDm4ayxMfxFP3Hgt/eE8VYaJIW3Ev18g+TATsffGRpBMTaCdM7s7UkUE93YPrJ2wu9q96zd/GIDgBn5hNgAAJgmNgCAqsQGAFCV2AAAqhIbAEBVYgMAqEpsAABViQ0AoCqxAQBUJTYAgKrEBgBQVRYby82meCEAwKlCV2SxcblaFS8GADhV6IosNi4Wb8GxXDfLtTccAMDHhI4IPRG6IosNAIAaxAYAUNGi+QODWqXbkmklOgAAAABJRU5ErkJggg==" InformativeScreenshot="258ae22535ce0827f2e4479246fcfab6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:BuildDataTable DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="562,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;description&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;total&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+              <ui:BuildDataTable.DataTable>
+                <OutArgument x:TypeArguments="sd:DataTable">
+                  <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">dtProducts</mca:CSharpReference>
+                </OutArgument>
+              </ui:BuildDataTable.DataTable>
+            </ui:BuildDataTable>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="DataRow newRow = dtProducts.NewRow();&#xD;&#xA;newRow[&quot;quantity&quot;] = &quot;50&quot;;&#xD;&#xA;newRow[&quot;description&quot;] = &quot;Tylenol Ex-Strong 100/box&quot;;&#xD;&#xA;newRow[&quot;total&quot;] = &quot;747.50&quot;;&#xD;&#xA;dtProducts.Rows.Add(newRow);&#xD;&#xA;&#xD;&#xA;newRow = dtProducts.NewRow();&#xD;&#xA;newRow[&quot;quantity&quot;] = &quot;100&quot;;&#xD;&#xA;newRow[&quot;description&quot;] = &quot;NGK-ZFR5F-11 Spark Plug&quot;;&#xD;&#xA;newRow[&quot;total&quot;] = &quot;275.00&quot;;&#xD;&#xA;dtProducts.Rows.Add(newRow);&#xD;&#xA;&#xD;&#xA;newRow = dtProducts.NewRow();&#xD;&#xA;newRow[&quot;quantity&quot;] = &quot;50&quot;;&#xD;&#xA;newRow[&quot;description&quot;] = &quot;Radiator coolant&quot;;&#xD;&#xA;newRow[&quot;total&quot;] = &quot;250&quot;;&#xD;&#xA;dtProducts.Rows.Add(newRow);" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="562,164" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="sd:DataTable" x:Key="dtProducts">
+                  <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">dtProducts</mca:CSharpValue>
+                </InArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+            <Assign sap:VirtualizedContainerService.HintSize="562,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">
+                  <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">productCounter</mca:CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562,1526" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="product" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1401" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If sap:VirtualizedContainerService.HintSize="484,438" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Condition>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">productCounter != 1</mca:CSharpValue>
+                        </InArgument>
+                      </If.Condition>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ClickType="Single" DelayAfter="0.1" DelayBefore="0" DisplayName="Click 'Add Item'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="420, 631, 140, 40" ElementType="Button" FriendlyName="'Add Item'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn btn-add btn-lg' aaname='Add                             Item' check:innerText='Add Item' /&gt;" Guid="b8e3beec-cd8b-4f80-8583-40d40417cc94" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKMSURBVHhe7Zw9btRAFIA5Q0AsigMoJAitoKKLEA0SIFFHglMgUVHlBrlEqmhvkMIn8LZpIq20BRLiFkMma8+f32wcPznY4iu+Im+fn73zPs9LUsyDJ7uFAegLAkFvZnv7XqDdg+fm8PjIzL9/NK9/fgFoYd2wjlhXrDMPX733Ah1+PRIvAkh5+e2dmRXPzM6bz16g+Y9PYjJAit2JZsV+LJCUCJDj8d4BAkF/EAhUIBCoQCBQgUCgAoFABQKBCgQCFQgEKiYk0Km5WP8yf37XXC6EHJmzyy7XLExV165K6XNLk3NlLs6D+HlpVuvSnES5/wfTEcg2qW7whqU5k/IEBhWoXG5qI9C4BTqprmoJlh0aHYNAwzERgfz4ss3dLkR71In5yY5WlXcXyEkdsKpOk9yaRDD/QiziOvUzSrExMg2BXLPrsdW89a0xlsiT0jSiNQ5j1AJl6/vnla5tWK0zdaNnGQeTEMgttnuLM7tF0DgXD5vZervlhnYV6CYmjLBmxwubnsb8/ZpaofxCbKS70AQE8osoNSRc2LZoUq5cLytlRBeBfB2RVOLgWbfGEKgnt4wbcRdJBIqbkBPIxwcVqM6TxOgaGxOjF8gt4BacCJm/iNLdShoxQ+xA+ToIdE/kdosNToymef/yd6CgVuu5hO+BQPeBa37QsBDXPP+5a56Ea8L2MdNPoBp7j+zYFYRFoOFwixcsfIwXIdyhIomuF979HDUhlqjP/4GaeHq/m3hLovg7IBDANQgEKhAIVCAQqEAgUIFAoAKBQAUCgQoEAhUIBCoQCFQgEKhoCcQRd9CVzRF3yRmJHLIJXbGHbFpnduYfvEAc8wu3kR7z++jFWy8QwJ0pniIQaCjMX7SYcLCA9hNuAAAAAElFTkSuQmCC" InformativeScreenshot="22689de74558a332817494752b1f70ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DisplayName="Type Into 'INPUT quantity_row_1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="420, 573, 353, 38" ElementType="InputBox" FriendlyName="'INPUT quantity_row_1'" Guid="7cafd37b-324c-4774-9b14-f247343a9ec3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWUAAAAqCAYAAABr/Eq2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALDSURBVHhe7dm7btswFIDhPkZTG5KVboFnewsQwEuGOEvgqej7vwUrXqTyJluARPq4/YcPgSlZcpZfxNG37z82CgAgA1EGAEHGKD9tNmrb7FSz61T7/BMAUFjTPZvu6v4mUd62bfZLAICydH+TKDcdO2QAuAfd3yTKuRMBAHUQZQAQhCgDgCBEGQAEIcoAIAhRBgBBiDIACEKUAUAQogwAgqwa5cPHRf3+5XtXh8x5Ve3f1OXj4D7v1enroi6n/cRxALivdaKsw6YjHMXt5fRp4nw+eudWZSMc/675xwGgrhWifFDnPrzB7tN3fO/D/KlO+8yx4ogygMeyPMomutfGFHH47Oc44mb08fWmXsY1971xFOJfQ7MPg/PR/k3PidbNb/TvnR5/NTv7+H8h3ADqWRxlE9MbwTJjjDG4c6KcCaEbkfz93hBVbxduHhD+uCS+Tnzv6Li7RzBuya0BQCGLo5zEMyfYTc+IsglhPPKIA2ujHF4nH+HZUU4+D3NxAS8sAfwXZEbZN7xEHIz3slEOd7C3Ihvf+1aE0+MAUNLiKE/G1JML3fUouxgGIY4DWSbKwXUZXQCobHGUZ7/oi4J7NcrmmvPGF+tH2f2Wfo3RBYDalkc5F7Zh5KDXbr5889ZclMMXg45/TbNWLsrDg+bs4hwcA4CCVohyLwmmZqNpxg9RYM1O1NuB2h2pd95UyINrFYyy99vD6wNAWetE2bGxnRCE2Yus1kcx3h2PoXZ0SMOYz4lyzwXejkPiKMfH3VovfnAAQA2rRnmajmE8I5ZsagcNAGVVivKDMeOYR3qIAPhXEOUAs2QA90WUAUAQogwAghBlABCEKAOAIEQZAAQhygAgCFEGAEGIMgAIkkS56brsiQCAsnR/kyhv2zZ7MgCgLN3fJMpPmz7MzU41O3bMAFCL7q7ubxJlAMD9EWUAEGOj/gC5XEw94fnCCwAAAABJRU5ErkJggg==" InformativeScreenshot="f8e940b02db3894bb2631efb351621fd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.FullSelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">"&lt;webctrl id='quantity_row_"+productCounter+"' tag='INPUT' /&gt;"</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FullSelectorArgument>
+                          <uix:TargetAnchorable.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"&lt;webctrl id='quantity_row_"+productCounter+"' tag='INPUT' type='text' class='form-control invoice-quantity' aaname='' /&gt;"</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FuzzySelectorArgument>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">product.Field&lt;string&gt;("quantity")</mca:CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DisplayName="Type Into 'INPUT description_row_1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,216" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="783, 573, 353, 38" ElementType="InputBox" FriendlyName="'INPUT description_row_1'" Guid="6376e0e1-eacd-4cfc-9177-e4354b030aba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWUAAAAqCAYAAABr/Eq2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALwSURBVHhe7dq9btswFEDhPkZTG5LdboFnZTagJUOcJfBU9P3fghUpUuLPpSW3ps20Z/iA1KKvmA5HrNAvX79tFACgDkQZACoyRflps1HbZqea3V61338AAArTvdXd1f1NorxtW/FLAICydH+TKDd7TsgA8Ai6v0mUpYUAgPsgygBQEaIMABUhygBQEaIMABUhygBQEaIMABUhygBQEaIMABW5QZQPqv84q18/BR9H9Sx+5wFeXoc9vapOupbVqZP/O/zRDABY73ZRfuuSa92bjvPnjZjZf00PFgD/vKJRvnytfkQZwL0VjvLA/JP/XfUH//NOnS6+5khfiZxe/OuDw1Gdvev+jOf+fdjPcZ6h9xa9ejDBHT4fT/PWNCO+v92/8PrC3Gtad1bn/jBdc3POfRfOI/QAMspH2cZzjqoNsrc+fM0hzIvDbv4chto/1bpQBoGUohzsw97XC6Y/Mz/D25f9Xef7znGf9pqsAYBZ+SjbCLsojcEMT5tuzRgq/2d/zczEMHu/zD3EoEZrogfIxSgnD5tReG/57yaZCwDWnaOcX+uHdgxmLlzL0TZhjL8rRTnZx7g/N/tilM3P8WuZQRDrcJ5DlAHklI+yECkTXIk3w72CSK+FJ2/J/aI8z5sQZQB/oXyUg3gtrM1wgR7jVvKkHM5ejnLupOw+J8oArlM4yuk1OUhyvHxzRJfDvjrK8Uk3COpClIMT8Wx8gLi5RBnAdYpGWQyfPY3668OQCSfhOIAmjmEQ/Rnro+zvY8UDRJyx/L8viDKAtW4XZR24WDY8NsyTTLg9ySnaBlCasTrKw5rexVmLHyzePcwDIJqhjQ+DeUZ4cibKAK5zgyh/ToQRQI2IsnANAB6FKAvXAOBR/tsoA0CNiDIAVIQoA0BFiDIAVIQoA0BFiDIAVIQoA0BFiDIAVCSJcrPfiwsBAGXp/iZR3ratuBgAUJbubxLlp80Q5manmh0nZgC4B91b3V3d3yTKAIDHI8oAUI2N+g2EvnL/E/J0dgAAAABJRU5ErkJggg==" InformativeScreenshot="59903b20b3321747052bf06723261af5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.FullSelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">"&lt;webctrl id='description_row_"+productCounter+"' tag='INPUT' /&gt;"</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FullSelectorArgument>
+                          <uix:TargetAnchorable.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">"&lt;webctrl id='description_row_"+productCounter+"' tag='INPUT' type='text' class='form-control invoice-description' aaname='' /&gt;"</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FuzzySelectorArgument>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">product.Field&lt;string&gt;("description")</mca:CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DisplayName="Type Into 'INPUT price_row_1'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,216" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="1146, 573, 353, 38" ElementType="InputBox" FriendlyName="'INPUT price_row_1'" Guid="feb141b9-c80e-470f-a6ff-f700988d07fc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWUAAAAqCAYAAABr/Eq2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKjSURBVHhe7dhPT+JAGMDh/RjrYvizezOc8WzCxYN6MZ7Mfv9v0WVaCtPpFAShTLLP4UnUdqbD5cdrf/z8NakAKIMoAxRkF+W7yaS6n86r6XxRzX7/AeDKQm9Dd0N/e1G+n82yiwC4rtDfXpSnCxMywC2E/vainLsRgHGIMkBBRBmgIKIMUBBRBiiIKAMURJQBCiLKAAURZYCCfD/Kj8/V38+Pw96fqofc2o5V9fql+yL1s5+rVe5asHyqPnLnqR1Y1zq2P8CFfT/KiYf121khW71sQnmlKL8+9q/VzxNcoDD/bZTryXzwGsBtjBfl9FXCLsDLav0e/f3zrVovB9ZsdCJ6gSh/rJebn5szvK73z6vXZPZvPt/+PM364euiD5xinCjXcYsDtg1xNBn3JuVMUJu9o2h/J8qda+0XQ7R3kOzff+URhz1zvu0z0nADDBkhytvgvaw696XBTKNc75O+zkgje3aU2wi3awfO2Nn/2OuObqBb2S8pgAEjRDkfqzSEh94pN3uGiDZOjXK8dqfzrOYsvTPG+9c/J5N0bOh6fYYD6wAio0V5cFodinIS1Hr9xSbl1FejfOBZ9fX9ebtEGfia0aI8NCm3f0+jnJ2cbx7lMyZlgBOMEOXuRLyTBLMb4Xwk29cYN4nysb2Grh87I0BkhChv1GGKo7cN9YHJuP493mcbvc4+Y0Z5o3em5Aun+ezxtDz0XwJA3jhRDqKo1gYm5/0kvA3ebk2IXRO53dqRoxy00/pO8jnS64IMnOLiUQbgfKIMUBBRBiiIKAMURJQBCiLKAAURZYCCiDJAQUQZoCCiDFAQUQYoSC/K08UieyMA1xX624vy/WyWvRmA6wr97UX5brIJ83ReTecmZoAxhN6G7ob+9qIMwO2JMkAxJtU/lp1bECWmY8EAAAAASUVORK5CYII=" InformativeScreenshot="ce46d7cfa2c046a5cfecc578b3909222.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.FullSelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"&lt;webctrl id='price_row_"+productCounter+"' tag='INPUT' /&gt;"</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FullSelectorArgument>
+                          <uix:TargetAnchorable.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">"&lt;webctrl id='price_row_"+productCounter+"' tag='INPUT' type='text' class='form-control total-price' aaname='' /&gt;"</mca:CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FuzzySelectorArgument>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">product.Field&lt;string&gt;("total")</mca:CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                    <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">
+                          <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">productCounter</mca:CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">productCounter + 1</mca:CSharpValue>
+                        </InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <ui:ForEach.Values>
+                <InArgument x:TypeArguments="sc:IEnumerable">
+                  <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">dtProducts.Rows</mca:CSharpValue>
+                </InArgument>
+              </ui:ForEach.Values>
+            </ui:ForEach>
+            <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'INPUT fileupload'" sap:VirtualizedContainerService.HintSize="562,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="631, 817, 303, 30" ElementType="InputBox" FriendlyName="'INPUT fileupload'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='file' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='file' class='' aaname='' /&gt;" Guid="3ec563b0-7d0b-44b7-bdb6-b47db65eedd4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATMAAAAiCAYAAAAzpT7UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUMSURBVHhe7Z29ThtBEMfzTHmdlHQmhIIuHTWPQYVcpY2UhsaFhZSGxgJRRAq8gOvN7e2HZ2dnZ3exMXfhv9JPjr1fczean/bsSHz6/P3KAADA3IHMAAD/BYnMvpxfmJOzc3N6egreCXv/bR5oXgAAdaLMbAEtFguxwMBxsXmA0ADoI8rs5Os3sbDA+2DzQRMFANCJMpMKCrwvNFEAAB3IbMLQRAEAdCCzCUMTBQDQgcwmDE0UAEAHMpswNFEAAJ1Xymxlnk3atpulOOZ5RT+bE0uz2bprE9t2Y5Z23Gq8SrMic/J78TpooiI3d+bh7x/zcn8r9l/fD31Pd+ZS6Ovi1715sfsMPKx/m/Xwuv5F++7NNZ9zQC7Xj4e5DvBh6JbZ0ld4Kikvt1Dg5LPZy+x5JfSVOKLMqFwIh5HZ7Sivh/UPoW8AMgMTpE9my41x9V3u2xUyZLYvNFERIjNJKJAZ+Kh0yWx8okpOX5SlWa1oEQeZ+VNbaJkcWP/wzj2y9Yzx4iEtk6iXbWxVSTXKrPqYyWIv3r8cmqiIl9l67V65cCSZjWKIAlQkZUlkabHScnLTHjP5HtKpMYPvReIOMrtO1n00P2/a1xD7BQnrsf8wP5/sPbsdX+M4iHZydMis99QRinhrNkv/2Vj4RDRBMEQYbgiRVXWMIB1n3d2+2anRz1HFcgiZ+XugXZ8CTVQkyGwoOFeEaYFzmY3v6Rg/XxVadjLTZZbF0bLHuEYqDhp7FEz8btBJJZGIX2O3DxtD7pW0h31fj92vSddpuofg2HTIzBVmr8zS8akgnHO4UNJ59TH1uMQ1vODKj8H7y8x9v8jF1X4faaIiSYE6yWTyUorZ4gpYe0zskRkf66jtMcZZ+BHDIs4f9w3i8ZLha9BrTsZLtMQu78OlCN6fN5dZKgsqiLIsdvJpGeP/bVsmPUsp7lQ8OX5vsRFBFWVWib0myQGaqAgXFDudJEVWKuaC5HZ0yEzdoyQSWSKUUShcFslepTWofNyY9PRGaIrdrcfnQ2bT480fM2syk9bjMtPHuPfhV9bYoixcHKVWlVlNOjWZldqhZDYwFpYvvlxmwuno4DJzwsjRZVbev11m+Rr8JOXfk7jS60j7dkBmc+OAPwDw/j1PZs1j0s8tQWxOKqWTWY3y3gk1mdXmK9BERUQR+RPIUMDtJ7OSaCy9MtPWkuDr5+x7MpPXDmLzazTFDpnNhS6Zqd8zZV+y12RWkmMqn5YxEnUhSvFR9pVZKfZ0jAZNVKR0qhoL0xYqKbLCWPH7qIQOmanxlPbwUuHfdxHqMiusUYonQq6lKXbIbC70yWxgv/80ywRR/aWyZYwgNi7dTLQl0VD2l1m8L2QN+UcBGZqoiFKsY4ENfbTI3Gfk9OHnyyeXQIfMBpwc6QmHzxcY10ivg0q2LrPwnu7jBRfm8fEDXOT12CGzudAts5EgGNLyk0aDzMi42ETB1Maw/qFl8fCYVZFZDiEzC4+tTWQWmqiIdvLwfbzIXMFaqTnEuQl9MrPwPVSRBUK8ESaZmswsfA1+UvPC28HmD+ixQ2Zz4XUyA0eBJgoAoAOZTRiaKACADmQ2YWiiAAA6kNmEoYkCAOhAZhOGJgoAoAOZTRiaKACADmQ2YWiiAAA6UWb4I8DTAn8EGIA+osy+nF+YxWIhFhY4LjYPNh80UQAAnSgziy2gk7NzscDAcbD3HyIDoJ9EZgAAMFcgMwDAf8CV+QcCbiiZTfK2+wAAAABJRU5ErkJggg==" InformativeScreenshot="d38ae070c9bf6dec66d905b9d8ee2f45.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0.2" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="562,216" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="201, 470, 514, 15" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="6a04866b-7689-4bfd-9497-2ead659c489a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgYAAAATCAYAAADru8WhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABjSURBVHhe7dZBDQAgDAAxZM2/sREScir6qIeemVkAgEcMAICIAQAQMQAAIgYAQMQAAIgYAAARAwAgYgAARAwAgIgBABAxAAAiBgBAxAAAiBgAABEDACBiAABEDACAiAEA8M1eOq6KENuzj60AAAAASUVORK5CYII=" InformativeScreenshot="ae99314d4a87164ffaf10dd8b2078c94.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="138, 469, 54, 15" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAATCAYAAADBGB7WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD+SURBVFhH7VPREcMgCO1YTuMszsIobuIkVIwY9IgmTT9aI7l3hwYePMWXMQafgCV0Niyhs0EIdeixtgAWjQUM8QPLMez/FxqhIxFL6M/jhFC538SksWbz6Ko8Qo6H/VGk55D/O/lWvKtz3M7tnUELeyXJofZAxAHQckxE941SgWOh0o+I5FUDkpNFJGWdAym80bjRfBqFu+I46IFi+kJFkrov/Ooks5Vb0XKVdRaxmVJjxHGqhw03hWq3IzFqkvMtQlBqXOLo48YbJV+MlIqWU6zleKWGtRqjNflKD18dXfrXjs6l0aVbzHnBo//kRmmt9dAXOjeW0NmwhM4Fg2+pzljmPe2nEQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">filePath</mca:CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="562,156" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="747, 494, 88, 26" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="16b9d0bf-3928-4df4-972f-01d390ccf8e8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE4SURBVGhD7ZXtDYMgFEW7k3+chWVYhVUYhQ3cgHJRFEFNk+orNPckJ2n9anLA19c4jp7KyeDCrsGnaaIPehicPMNl8GEY6I0CBhcUMLiggMEFBQwuKGBwQUF7wbWNv51wRh1f16GgreAxtvNGpWPKG/c/0UFDwee4VhfHlQlLYL3Oj3UqaCf4aVgsRNr1OlwRPmtcO7Pb/fEZifSs5R6zjapfvTGgreDOeFWdy3c+4gXSdTFwsRhpHIXxNIdd7rF6Pb4thqygzx2+zvjBo19cjN3uXoiRy3vqZ0gJ2gn+0QwvY2X3nC4Yg59bve6Ik8/c4nu1GEfzmcGvjdE39jt+jmVt9teYny/HCkfKt/4u1h0CBhcUMLigoLPgfQsYXFDA4IICBhcUXAYn93ManD5nFZzKyOCijv4Nak8CcxEYFZ8AAAAASUVORK5CYII=" InformativeScreenshot="df1d4a4fc0a6ec5d6a6540cb6b3ed51d.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'INPUT agreeToTermsYes'" sap:VirtualizedContainerService.HintSize="562,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="415, 762, 13, 13" ElementType="RadioButton" FriendlyName="'INPUT agreeToTermsYes'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='radio' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='radio' class='form-check-input' aaname='' /&gt;" Guid="cc1c6bfa-5d84-49c0-b5fa-ca1c9bb617d6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVDhPtZNNDoIwEEY9hpGNCp6CyM+SNbCyPQKERbsEjj7y1UigM8QYcfHSQGZepsPH4XgK6Ff+JwmjG2mtyRhLXde586EUXaf3Uj2TZHlOfd9TVVVUFAXFcezOsixpGAZK02xVD1YSCNq2dY1bNE1DiSeaJbgCJpAafTDRJYy4BDvAFaQmH9QppbnEWjvv4BOoM8ZwCb6C1LAF6plkl0nUtBN8RqnJp67raSeKSxAkbF1q8hnHkc7XkEsAgoQcSI1vkKN7ksw9YCUBCBIm8hOLK2ACXwCYBCBIyAGW9/p3jHteXmGJKPmWHSQBPQGIYMTwd05kdQAAAABJRU5ErkJggg==" InformativeScreenshot="df589f7d6f9e4b7e3438de9347d05637.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="420, 820, 140, 40" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='submit_button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submit_button' tag='BUTTON' type='button' class='btn btn-success btn-lg' aaname='Submit' check:innerText='Submit' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVHhe7dw9TgJBGIBhj2GgNCZ0Gg9jYmu8gLGzklh6DCpKWhIa2g3ldhAKE+Mtxv2bn90ZlmW/EBh8iyeRYYaQzOvsarFX14OhAvoiIIiYgAY3t2r0+KzuXj/Uw/sX4MnbyBvJW/ECGj29BBcBTXkrXkD3b5/ByUBT3ooXUGgisAsBQYSAIEJAECEgiBAQRAgIIgQEEQKCCAFB5EICWqrk51v9Ghs1n4bm7TFdqbVk/T67Pj8f367U2J0biQsIqBmP1iOCUwS0SMvvS0CnMU42VTCpmhRjMzXf5q8z6dKb3+rYAYUQ0GmZgNwN8DbFnlLJomWtG9BC/9yyLgvUBly+rr3vjBUagdbmVdbJzM6PQPQBmVgq7kZbhwYUpteGNl5bb1uiIKDzNEnrm1CoXb56BGTWO5fEap7deH2pc+aExvRnNQIqxriEnYnQ6WE2pcclTG9wzpxy5X2Wt27fGAHFxT2RymAODUjfkFca414YXccI6NzYy0T93sGO9wuo4wlEQLEH5J42zqlhNtwPyIZmx/yAMiYE/17mKAE1T71IRB9QbdObnN/q4I22FgooQJ9exwmo4qyPQfwBFZzTZOdGuH8pZbJoJnqDvYCyDe74f6CDxkIBZWpxExD+EwKCCAFBhIAgQkAQISCIEBBECAgiBAQRAoIIAUGEgCDiBcQj7tBV8BF3PGQTXQUfssljfrFP62N+gT4ICAJD9QcImPb68kSOfgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="562,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9947918b-55d9-45db-aa61-d1daf03b64a7" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" DesignTimeRectangle="420, 820, 140, 40" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='submit_button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submit_button' tag='BUTTON' type='button' class='btn btn-success btn-lg' aaname='Submit' check:innerText='Submit' /&gt;" Guid="0d42c347-1d44-4da3-b057-cf86cf30b8f8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIeSURBVHhe7dw9TgJBGIBhj2GgNCZ0Gg9jYmu8gLGzklh6DCpKWhIa2g3ldhAKE+Mtxv2bn90ZlmW/EBh8iyeRYYaQzOvsarFX14OhAvoiIIiYgAY3t2r0+KzuXj/Uw/sX4MnbyBvJW/ECGj29BBcBTXkrXkD3b5/ByUBT3ooXUGgisAsBQYSAIEJAECEgiBAQRAgIIgQEEQKCCAFB5EICWqrk51v9Ghs1n4bm7TFdqbVk/T67Pj8f367U2J0biQsIqBmP1iOCUwS0SMvvS0CnMU42VTCpmhRjMzXf5q8z6dKb3+rYAYUQ0GmZgNwN8DbFnlLJomWtG9BC/9yyLgvUBly+rr3vjBUagdbmVdbJzM6PQPQBmVgq7kZbhwYUpteGNl5bb1uiIKDzNEnrm1CoXb56BGTWO5fEap7deH2pc+aExvRnNQIqxriEnYnQ6WE2pcclTG9wzpxy5X2Wt27fGAHFxT2RymAODUjfkFca414YXccI6NzYy0T93sGO9wuo4wlEQLEH5J42zqlhNtwPyIZmx/yAMiYE/17mKAE1T71IRB9QbdObnN/q4I22FgooQJ9exwmo4qyPQfwBFZzTZOdGuH8pZbJoJnqDvYCyDe74f6CDxkIBZWpxExD+EwKCCAFBhIAgQkAQISCIEBBECAgiBAQRAoIIAUGEgCDiBcQj7tBV8BF3PGQTXQUfssljfrFP62N+gT4ICAJD9QcImPb68kSOfgAAAABJRU5ErkJggg==" InformativeScreenshot="02de11a23725e0e6cdd71de143abca43.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement">
+          <mca:CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">savedBrowserInstance</mca:CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, 32, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ecb75be4061bb76e8338b219ba841c36.png" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Invoice Entry' /&gt;" Url="https://developer.automationanywhere.com/challenges/automationanywherelabs-invoiceentry.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
